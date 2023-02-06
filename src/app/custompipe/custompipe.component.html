@@ -1,0 +1,9 @@
+<input  type="text" [(ngModel)]="searchText" placeholder="search item">
+<ul>
+    <li *ngFor ="let c of arr | cpipe : searchText "> 
+        {{c}}
+    </li>
+</ul>
+<div>
+<button (click)="update()">update</button>
+</div>

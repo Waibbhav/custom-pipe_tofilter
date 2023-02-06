@@ -1,0 +1,45 @@
+<p>pipe1 works!</p>
+<p>{{titel1}}</p>
+<b> {{titel1 | uppercase}}</b><br><hr>
+
+
+<p>{{title2}}</p>
+<b>{{title2 | lowercase}}</b><br><hr>
+
+
+<p><b>old without pipe </b>{{oldDate}}</p><br>
+<p><b>old with pipe</b>{{oldDate | date}}</p><br>
+<p><b>old with pipe</b>{{oldDate | date : 'hh:mm:ss'}}</p><br>
+
+<p><b> Today </b>{{todayDate}}</p><br>
+
+<b>Month/Year :: </b>{{todayDate | date : 'M/y'}}<br>
+<b>Month/Date/Year ::</b>{{todayDate | date :'MM/dd/yy'}}<br>
+<b> short time</b> {{todayDate | date:'shortTime'}}<br>
+<b> medium</b>{{todayDate | date:'medium'}}<br>
+<b>full time </b>{{todayDate | date :'fullTime'}}<hr>
+
+
+<p>{{price}}</p>
+<p>{{price | currency :'INR' :'code'}}</p>
+<p>{{price | currency: 'INR' : 'Indian Rupee'}}</p>
+<p>{{price | currency: 'INR': 'symbol':'3.2-2'}}</p> <hr>
+
+
+<p>percent : 12.34</p>
+<b>{{12.34 | percent}}</b><hr>
+
+<p>json pipes</p>
+<b>{{jsonVal | json}}</b><hr>
+
+<p>slice pipes</p>
+<b>{{color | slice:2:5 }}</b><hr>
+
+<!-- <p>{{123 | cpipe}}</p><hr> -->
+
+
+<p>squire root</p>
+<p>{{16 | sqroot}}</p><br><hr>
+
+<p>multiply</p>
+<p>{{2 | multiply:2}}</p>
